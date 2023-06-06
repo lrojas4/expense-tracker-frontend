@@ -1,0 +1,20 @@
+<div class="container col-md-4">
+    <h1>Login</h1>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input [(ngModel)]="user.email" name="email" type="text" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input [(ngModel)]="user.password" name="password" type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+</div>
