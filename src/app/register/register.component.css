@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    color: #eeeeee;
+    border: 1px solid #dbd8e3;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login {
+    text-decoration: none;
+}

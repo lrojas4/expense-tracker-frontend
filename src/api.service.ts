@@ -23,4 +23,17 @@ export class ApiService {
     let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
     return this.http.get("http://localhost:8080/api/expenses/", {headers});
   }
+
+  updateExpenses(id: number, expense: any) {
+    let keyJwt: String = localStorage.getItem('jwt') || "";
+    let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
+    return this.http.put(`http://localhost:8080/api/expenses/${id}`, {expense}, {headers});
+  }
+
+  getIncomes() {
+    let keyJwt: String = localStorage.getItem('jwt') || "";
+    let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
+    return this.http.get("http://localhost:8080/api/incomes/", {headers});
+  }
+
 }

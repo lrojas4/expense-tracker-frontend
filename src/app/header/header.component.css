@@ -1,0 +1,17 @@
+.header {
+    background-color: #3a4750;
+}
+
+.nav {
+    display: flex;
+    padding: 10px 15px;
+}
+
+.title {
+    margin-left: 0px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color:  #eeeeee;
+  }

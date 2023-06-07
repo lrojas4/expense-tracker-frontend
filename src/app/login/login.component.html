@@ -1,6 +1,6 @@
-<div class="container col-md-4">
-    <h1>Login</h1>
+<div class="container login col-md-4">
     <form (ngSubmit)="onSubmit()">
+        <h1>Login</h1>
         <div class="mb-2">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
             <input [(ngModel)]="user.email" name="email" type="text" class="form-control" id="email" placeholder="Enter email">
@@ -16,5 +16,6 @@
         <div>
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
+        <p>New User? <a class="register">Register</a></p>
     </form>
 </div>
