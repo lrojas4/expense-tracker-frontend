@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { CategoryComponent } from './category/category.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CategoryComponent } from './category/category.component';
     BrowserModule, 
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
