@@ -1,3 +1,5 @@
+<h2>Expenses</h2>
+<a>Add Expense</a>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -5,14 +7,18 @@
         <th scope="col">Date</th>
         <th scope="col">Amount</th>
         <th scope="col">Description</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let expense of expenses">
         <th scope="row">{{expense.id}}</th>
         <td>{{expense.date}}</td>
-        <td>{{expense.amount}}</td>
+        <td>${{expense.amount}}</td>
         <td>{{expense.description}}</td>
+        <td class="update"><a routerLink="/expense/{{expense.id}}">Update</a></td>
+        <td class="delete"><a routerLink="/expense/{{expense.id}}">Delete</a></td>
       </tr>
     </tbody>
   </table>
