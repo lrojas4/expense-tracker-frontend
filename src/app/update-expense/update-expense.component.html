@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Update
+</button>
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <form (ngSubmit)="updateExpense()">
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Date</label>
+                    <input [(ngModel)]= "expense.date" name="date" type="text" class="form-control" placeholder="Enter date">
+                </div>
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Amount</label>
+                    <input [(ngModel)]= "expense.amount" name="amount" type="text" class="form-control" placeholder="Enter amount">
+                </div>
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Description</label>
+                    <input [(ngModel)]= "expense.description" name="description" type="text" class="form-control" placeholder="Enter description">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Update Expense</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>

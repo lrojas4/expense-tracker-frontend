@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    color: #eeeeee;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.form-label {
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 25px;
+}

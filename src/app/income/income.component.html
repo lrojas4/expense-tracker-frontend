@@ -1,3 +1,4 @@
+
 <h2>Incomes</h2>
 <a routerLink ="/income">Add Income</a>
 <table class="table table-hover">
@@ -13,8 +14,8 @@
       <tr *ngFor="let income of incomes">
         <th scope="row">{{income.id}}</th>
         <td>${{income.income_amount}}</td>
-        <td class="update"><a routerLink="/income/{{income.id}}">Update</a></td>
-        <td class="delete"><a routerLink="/income/{{income.id}}">Delete</a></td>
+        <td><button class="btn btn-secondary">Update</button></td>
+        <td><button class="btn btn-danger">Delete</button></td>
       </tr>
     </tbody>
   </table>

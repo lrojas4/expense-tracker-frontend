@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { CategoryComponent } from './category/category.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AddExpenseComponent } from './add-expense/add-expense.component';
+import { UpdateExpenseComponent } from './update-expense/update-expense.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { AppRoutingModule } from './app-routing.module';
     IncomeComponent,
     RegisterComponent,
     UserDashboardComponent,
-    CategoryComponent
+    CategoryComponent,
+    AddExpenseComponent,
+    UpdateExpenseComponent
   ],
   imports: [
     BrowserModule, 
