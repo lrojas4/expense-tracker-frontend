@@ -1,14 +1,17 @@
-<header class="header">
-    <nav class="nav">
-      <div class="home">
-        <h1 class="title">Expense Tracker</h1>
-      </div>
-      <div class="links">
-        <ul>
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/login">Login</a></li>
-          <li><a routerLink="/register">Register</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark"
+  data-bs-theme="dark">
+  <div class="container-fluid">
+    <h1 class="title">Expense Tracker</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLink="/" class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
