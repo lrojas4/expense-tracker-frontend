@@ -4,8 +4,14 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { AddExpenseComponent } from './add-expense/add-expense.component';
+import { ExpenseComponent } from './expense/expense.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: LoginComponent
+  },
   { 
     path: 'login', 
     component: LoginComponent 
@@ -17,7 +23,16 @@ const routes: Routes = [
   { 
     path: 'user-dashboard', 
     component: UserDashboardComponent 
-  }
+  },
+  {
+    path:'add-expense',
+    component: AddExpenseComponent
+  },
+  {
+    path:'expenses',
+    component: ExpenseComponent
+  },
+
 ];
 
 @NgModule({
