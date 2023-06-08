@@ -14,6 +14,8 @@ import { CategoryComponent } from './category/category.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { UpdateExpenseComponent } from './update-expense/update-expense.component';
+import { AddIncomeComponent } from './add-income/add-income.component';
+import { UpdateIncomeComponent } from './update-income/update-income.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { UpdateExpenseComponent } from './update-expense/update-expense.componen
     UserDashboardComponent,
     CategoryComponent,
     AddExpenseComponent,
-    UpdateExpenseComponent
+    UpdateExpenseComponent,
+    AddIncomeComponent,
+    UpdateIncomeComponent
   ],
   imports: [
     BrowserModule, 

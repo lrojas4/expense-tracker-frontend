@@ -33,7 +33,7 @@ export class ExpenseComponent implements OnInit {
     this.apiService.deleteExpense(id).pipe(
       tap(response => {
         console.log('response', response);
-        this.router.navigateByUrl('/expenses');
+        this.router.navigateByUrl('/user-dashboard');
       })
     ).subscribe();
   }

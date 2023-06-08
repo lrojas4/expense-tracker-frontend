@@ -1,0 +1,20 @@
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">Update
+</button>
+  <div class="modal" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <form (ngSubmit)="updateIncome()">
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">Income amount</label>
+                    <input [(ngModel)]= "income.income_amount" name="date" type="text" class="form-control" placeholder="Enter income amount">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Update Income</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

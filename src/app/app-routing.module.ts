@@ -6,6 +6,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { HeaderComponent } from './header/header.component';
 import { AddExpenseComponent } from './add-expense/add-expense.component';
 import { ExpenseComponent } from './expense/expense.component';
+import { IncomeComponent } from './income/income.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
     path:'expenses',
     component: ExpenseComponent
   },
+  {
+    path: 'incomes',
+    component: IncomeComponent
+  }
 
 ];
 

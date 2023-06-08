@@ -54,21 +54,27 @@ export class ApiService {
     return this.http.get("http://localhost:8080/api/incomes/", {headers});
   }
 
+  getIncome(id: number) {
+    let keyJwt: String = localStorage.getItem('jwt') || "";
+    let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
+    return this.http.get(`http://localhost:8080/api/incomes/${id}/`, {headers});
+  }
+
   addIncome(income: any) {
     let keyJwt: String = localStorage.getItem('jwt') || "";
     let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
-    return this.http.post("http://localhost:8080/api/expenses/", {income}, {headers});
+    return this.http.post("http://localhost:8080/api/incomes/", income, {headers});
   }
 
-  updateIncome(id: number, income: any) {
+  updateIncome(income: any) {
     let keyJwt: String = localStorage.getItem('jwt') || "";
     let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
-    return this.http.put(`http://localhost:8080/api/expenses/${id}`, {income}, {headers});
+    return this.http.put(`http://localhost:8080/api/expenses/${income.id}/`, income, {headers});
   }
 
   deleteIncome(id: number) {
     let keyJwt: String = localStorage.getItem('jwt') || "";
     let headers = new HttpHeaders().set("Authorization", `Bearer ${keyJwt}`)
-    return this.http.delete(`http://localhost:8080/api/expenses/${id}`, {headers});
+    return this.http.delete(`http://localhost:8080/api/incomes/${id}`, {headers});
   }
 }
