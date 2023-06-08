@@ -1,6 +1,5 @@
-
 <h2>Incomes</h2>
-<a routerLink ="/income">Add Income</a>
+<app-add-income></app-add-income>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -14,8 +13,8 @@
       <tr *ngFor="let income of incomes">
         <th scope="row">{{income.id}}</th>
         <td>${{income.income_amount}}</td>
-        <td><button class="btn btn-secondary">Update</button></td>
-        <td><button class="btn btn-danger">Delete</button></td>
+        <td><app-update-income [income]="income"></app-update-income></td>
+        <td><button *ngIf="income.id" (click)="deleteIncome(income.id)" class="btn btn-danger">Delete</button></td>
       </tr>
     </tbody>
   </table>
