@@ -28,7 +28,7 @@ http://localhost:4200/user-dashboard
 ## Planning Documentation
 
 ## CLI Commands
-`ng serve` - to run dev server, on `http://localhost:4200/`.
+`ng serve` - to run dev server, on `http://localhost:4200/`.  
 `ng build` - to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Resources 
