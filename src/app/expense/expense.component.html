@@ -1,5 +1,5 @@
 <h2>Expenses</h2>
-<a>Add Expense</a>
+<app-add-expense></app-add-expense>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -17,8 +17,8 @@
         <td>{{expense.date}}</td>
         <td>${{expense.amount}}</td>
         <td>{{expense.description}}</td>
-        <td class="update"><a routerLink="/expense/{{expense.id}}">Update</a></td>
-        <td class="delete"><a routerLink="/expense/{{expense.id}}">Delete</a></td>
+        <td><app-update-expense [expense]="expense"></app-update-expense></td>
+        <td><button *ngIf="expense.id" (click)="deleteExpense(expense.id)" class="btn btn-danger">Delete</button></td>
       </tr>
     </tbody>
   </table>
