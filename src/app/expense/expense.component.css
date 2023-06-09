@@ -1,10 +1,13 @@
+h2 {
+    color: #eeeeee;
+    margin-left: 20px;
+}
+
 .table {
     width: 50%;
     text-align: center;
-}
-
-h2 {
-    color: #eeeeee;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 .update {
