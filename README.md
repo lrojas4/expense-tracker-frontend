@@ -6,7 +6,8 @@
 [User Stories](#user-stories)  
 [Routes](#routes)  
 [CLI Commands](#cli-commands)   
-[Resources](#resources)
+[Resources](#resources)  
+[Acknowledgements](#acknowledgements)
 
 ## Overview
 A front-end application that allows users to add, update and delete their income and expenses.  
@@ -50,3 +51,4 @@ http://localhost:4200/user-dashboard
 * [Jaime Padilla](https://github.com/Jaypad07)
 * [Kim Nguyen](https://github.com/knnguyen2410)
 * [Leonardo Rodriguez](https://github.com/LRodriguez92)
+ 
