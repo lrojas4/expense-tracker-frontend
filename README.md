@@ -6,7 +6,8 @@
 [User Stories](#user-stories)  
 [Routes](#routes)  
 [CLI Commands](#cli-commands)   
-[Resources](#resources)
+[Resources](#resources)  
+[Acknowledgements](#acknowledgements)
 
 ## Overview
 A front-end application that allows users to add, update and delete their income and expenses.  
