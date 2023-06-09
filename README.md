@@ -11,6 +11,10 @@
 
 ## Overview
 A front-end application that allows users to add, update and delete their income and expenses.
+<img src="./src/assets/images/login.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/register.png" style="height: 15rem; width: 30rem"/>
+<img src="./src/assets/images/dashboard.png" style="height: 15rem; width: 30rem"/>
+
 
 ## Tools and Technologies
 * Angular
