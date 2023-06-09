@@ -46,4 +46,7 @@ http://localhost:4200/user-dashboard
 * [SheCodes](https://palettes.shecodes.io)
 
 ## Acknowledgements
-Big thanks to [Maksym Zinchenko](https://github.com/maklaut007) and [Leonardo Rodriguez](https://github.com/LRodriguez92).
+* [Maksym Zinchenko](https://github.com/maklaut007)
+* [Jaime Padilla](https://github.com/Jaypad07)
+* [Kim Nguyen](https://github.com/knnguyen2410)
+* [Leonardo Rodriguez](https://github.com/LRodriguez92)
